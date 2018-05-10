@@ -4,7 +4,7 @@
   "description": "Test task for devchallenge round 1",
   "main": "index.js",
   "scripts": {
-	"test": "jest --colors"
+    "test": "jest --colors"
   },
   "keywords": [
     "api",
@@ -12,6 +12,10 @@
   ],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/AnnaPiresh/devchallenge.it-qa-1"
+  },
   "devDependencies": {
     "frisby": "^2.0.16",
     "jest": "^22.4.3"

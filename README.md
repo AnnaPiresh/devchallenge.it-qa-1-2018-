@@ -1,2 +1,2 @@
 # devchallenge.it-qa-1
-Test tasore12
+Test task for Dev Challenge 12
