@@ -1,0 +1,25 @@
+{
+  "name": "devchallenge.it-qa-1",
+  "version": "1.0.0",
+  "description": "Test task for devchallenge round 1",
+  "main": "index.js",
+  "scripts": {
+	"test": "jest --colors"
+  },
+  "keywords": [
+    "api",
+    "tests"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "frisby": "^2.0.16",
+    "jest": "^22.4.3"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "verbose": true
+  }
+}
