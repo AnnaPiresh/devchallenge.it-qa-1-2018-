@@ -11,7 +11,7 @@ describe('Pets can be found and updated by id', function(){
    */
   it('Create a pet and find it using id', function(){
     return frisby
-      .post(`${petstore.petBaseUrl}`, petInfo.newPet)
+      .post(petstore.petBaseUrl, petInfo.newPet)
       .then(function(result){
         petId.push(result.json.id);
 

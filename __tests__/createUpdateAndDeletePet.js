@@ -10,7 +10,7 @@ describe('New pets can be successfully added to a store and updated', function()
    */
   it(`Add a new pet with id ${petInfo.newPet.id}`, function(){
     return frisby
-      .post(`${petstore.petBaseUrl}`, petInfo.newPet)
+      .post(petstore.petBaseUrl, petInfo.newPet)
       .expect('status', 200)
       .expect('bodyContains', 'id', petInfo.newPet.id)
       .expect('bodyContains', 'name', petInfo.newPet.name)
@@ -23,7 +23,7 @@ describe('New pets can be successfully added to a store and updated', function()
    */
   it(`Pet name should be changed from '${petInfo.newPet.name}' to '${petInfo.updatedPet.name}'`, function () {
     return frisby
-      .put(`${petstore.petBaseUrl}`, petInfo.updatedPet)
+      .put(petstore.petBaseUrl, petInfo.updatedPet)
       .expect('status', 200)
       .expect('bodyContains', 'id', petInfo.updatedPet.id)
       .expect('bodyContains', 'name', petInfo.updatedPet.name)
