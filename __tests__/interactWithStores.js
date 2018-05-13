@@ -20,7 +20,7 @@ describe(`Possible to place orders for various pets`, function(){
 
   it('Created pet could be purchased', function(){
     return frisby
-      .post(petstore.petBaseUrl, petInfo.newPet)
+      .post(stores.petBaseUrl, petInfo.newPet)
       .expect('status', 200)
       .then(function(result){
         order.orderDetails.petId = result.json[0].id;
