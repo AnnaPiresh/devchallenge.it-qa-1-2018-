@@ -10,4 +10,4 @@ const orderDetails = {
   "complete": false
 };
 
-module.exports ={orderDetails};
+module.exports = {orderDetails};
