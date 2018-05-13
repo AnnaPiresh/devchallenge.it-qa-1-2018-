@@ -9,7 +9,7 @@ describe('Check that pets can be found by various statuses', function () {
    */
   it(`Pets can be found by status '${petInfo.statuses[0]}'`, function () {
     return frisby
-      .get(`${petstore.baseUrl}/pet/findByStatus?status=${petInfo.statuses[0]}`)
+      .get(`${petstore.petBaseUrl}/findByStatus?status=${petInfo.statuses[0]}`)
       .expect('status', 200)
       .expect('header', 'content-type', 'application/json')
       .then(function(result){
@@ -23,7 +23,7 @@ describe('Check that pets can be found by various statuses', function () {
    */
   it(`Pets can be found by status '${petInfo.statuses[1]}'`, function () {
     return frisby
-      .get(`${petstore.baseUrl}/pet/findByStatus?status=${petInfo.statuses[1]}`)
+      .get(`${petstore.petBaseUrl}/findByStatus?status=${petInfo.statuses[1]}`)
       .expect('status', 200)
       .expect('header', 'content-type', 'application/json')
       .then(function(result){
@@ -37,7 +37,7 @@ describe('Check that pets can be found by various statuses', function () {
    */
   it(`Pets can be found by status '${petInfo.statuses[2]}'`, function () {
     return frisby
-      .get(`${petstore.baseUrl}/pet/findByStatus?status=${petInfo.statuses[2]}`)
+      .get(`${petstore.petBaseUrl}/findByStatus?status=${petInfo.statuses[2]}`)
       .expect('status', 200)
       .expect('header', 'content-type', 'application/json')
       .then(function (result) {

@@ -11,12 +11,12 @@ describe('Pets can be found and updated by id', function(){
    */
   it('Create a pet and find it using id', function(){
     return frisby
-      .post(`${petstore.baseUrl}/pet`, petInfo.newPet)
+      .post(`${petstore.petBaseUrl}`, petInfo.newPet)
       .then(function(result){
         petId.push(result.json.id);
 
         return frisby
-          .get(`${petstore.baseUrl}/pet/${result.json.id}`)
+          .get(`${petstore.petBaseUrl}/${result.json.id}`)
           .expect('status', 200)
           .expect('bodyContains', 'id', petInfo.newPet.id)
           .expect('bodyContains', 'name', petInfo.newPet.name)
@@ -37,14 +37,14 @@ describe('Pets can be found and updated by id', function(){
           }
         }
       })
-      .post(`${petstore.baseUrl}/pet/${petId[0]}`,  {
+      .post(`${petstore.petBaseUrl}/${petId[0]}`,  {
         'name': petInfo.updatedPet.name,
         'status': petInfo.statuses[1]
       })
       .expect('status', 200)
       .then(function(){
         return frisby
-          .get(`${petstore.baseUrl}/pet/${petId[0]}`)
+          .get(`${petstore.petBaseUrl}/${petId[0]}`)
           .expect('status', 200)
           .expect('bodyContains', 'id', petId[0])
           .expect('bodyContains', 'name', petInfo.updatedPet.name)
