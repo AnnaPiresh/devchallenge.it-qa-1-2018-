@@ -42,4 +42,4 @@ const updatedPet = {
 };
 
 
-module.exports ={statuses, newPet, updatedPet};
+module.exports = {statuses, newPet, updatedPet};
