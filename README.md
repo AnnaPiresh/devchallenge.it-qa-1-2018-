@@ -21,4 +21,6 @@ Test task for Dev Challenge 12
 
 Using CLI navigate to a directory with a project and run the following command: ```npm test```
 
+## Issues found during creation of these tests
 
+Can be found in Google Doc [here](https://docs.google.com/document/d/1IqSIlAUicoGtRlOW9liejoKmOhidQXJa6BmFWSc71FM/edit?usp=sharing)
