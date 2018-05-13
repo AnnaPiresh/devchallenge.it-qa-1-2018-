@@ -18,7 +18,6 @@ describe(`Possible to place orders for various pets`, function(){
       })
   });
 
-
   /*
   Create a pet and purchase it in order
   Verify response contains data specified in orders.js
@@ -69,6 +68,5 @@ describe(`Possible to place orders for various pets`, function(){
           .get(`${stores.storeBaseUrl}/order/${order.orderDetails.id}`)
           .expect('status', 404);
       });
-  })
-
+  });
 });
