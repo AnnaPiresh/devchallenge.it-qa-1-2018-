@@ -19,6 +19,6 @@ Test task for Dev Challenge 12
 
 ## Running the tests
 
-Open CLI and run the following command: ```npm test```
+Using CLI navigate to a directory with a project and run the following command: ```npm test```
 
 
