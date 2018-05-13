@@ -25,5 +25,9 @@
       "/node_modules/"
     ],
     "verbose": true
+  },
+  "dependencies": {
+    "casual": "^1.5.19",
+    "fs": "0.0.1-security"
   }
 }
